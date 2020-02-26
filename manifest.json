@@ -1,0 +1,39 @@
+{
+    "name": "lagom",
+    "description" : "удобный пойск с каленьдаром",
+    "version": "1.0",
+    "icons":{
+        "128":"./images/next.png",
+        "48":"./images/next.png",
+        "16":"./images/next.png"
+    },
+    "chrome_url_overrides": {
+      "newtab": "main.html"
+    },
+
+    "manifest_version": 2,
+    "browser_action": {
+      "default_icon": "./images/next.png",
+      "default_popup": "popup.html",
+      "default_title":"lagom"
+    },
+
+    "permissions": ["<all_urls>", "activeTab", "tabs", "storage", "http://*/",
+      "https://*/" ],
+
+    "background": {
+      "scripts": ["./scripts/jquery.js", "./scripts/background.js"]
+    },
+    "web_accessible_resources":[
+      "./images/*.png"
+    ],
+
+    "content_scripts": [
+        {
+          "matches": ["<all_urls>"],
+          "js": ["./scripts/jquery.js", "./scripts/content.js"]
+          
+        }
+      ]
+    
+}

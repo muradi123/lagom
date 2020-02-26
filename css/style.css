@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.lagom{
+    width: 100%;
+    z-index: 9999;
+    padding:0 ;
+    margin: 0;
+}
+
+.lagom-search{
+    display: flex;
+    width: 100%;
+    height: 7vh;
+    background-color: #fff;
+}
+
+
+#search{
+    letter-spacing: 0.1em;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    width: 25vw;
+    height: 5vh;
+}
+
+#search:focus{
+    outline: none;
+}
+
+.lagom-margins{
+    margin: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    text-align: center;
+}
+
+
+.lagom-title{
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.2em;
+    opacity: 0.9;
+}
+.yesterday-day{
+    font-size: 14px;
+    margin-top: 8vh;
+}
+.puple-backgroud-pannel{
+    height: 97vh;
+    background-color:#fb8cff ;
+}
+
+.dates{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 5%;
+    padding-top: 5vh;
+    font-size: 16px;
+    letter-spacing: 0.2em;
+    
+}
+
+.dates > div{
+    width: 23vw;
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+    border: 2px solid black;
+}
+.current-time-and-date{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.current-time{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    padding-top: 15vh;
+    letter-spacing: 0.3em;
+    font-weight: 600;
+    height: 65vh;
+    width: 50%;
+   
+}
+
+.current-time > h1{
+    font-size: 2em;
+    margin:0 4%;
+    text-align: center;
+}
+
+.circle-with-text {
+  background: rgba(0,0,0,0);
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  text-align: center;
+  margin: 5px -20px;
+  font-size: 45px;
+  padding: 15px;
+  display: flex;
+  height: 65%;
+  width: 55%;
+  color: #000;
+  border:1px solid black;
+}
+
+
+.current-time-and-date{
+    margin: 0 5%;
+}
+
+.today-day{
+    align-items: flex-start;
+    width: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    line-height: 2em;
+    padding: 20px;
+    border: 1px solid black;
+    letter-spacing: 0.2em;
+    padding-top: 30px;
+    font-size: 1.3em;
+     
+   margin:0 -15%;
+}
+
+.line{
+    margin: 0 -5%;
+    width: 70%;
+    height: 3px;
+    background-color: #000;
+}
+
+
+.today-day-and-weather{
+display: flex;
+width: 50%;
+justify-content: space-between;
+flex-direction: column;
+align-items: center;
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.container-fluid img{
+    width: 6vw;
+    height: 10vh;
+}
+@media only screen and (max-width: 930px) {
+    .dates{
+    font-size: 14px;
+    }
+    .circle-with-text{
+        font-size: 40px;
+        width: 65%;
+    }
+  }
